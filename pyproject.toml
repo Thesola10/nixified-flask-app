@@ -1,0 +1,21 @@
+[project]
+name = "thesola-io-api"
+description = "Backend API services for thesola.io"
+dependencies = [
+    "pylast",
+    "flask",
+    "flask-cors",
+    "cachetools",
+    "python-dotenv"
+]
+dynamic = [ "version" ]
+
+[[project.authors]]
+name = "Karim Vergnes"
+email = "me@thesola.io"
+
+[build-system]
+requires = [ "setuptools" ]
+
+[tool.setuptools]
+packages = [ "thesola_io_api" ]
